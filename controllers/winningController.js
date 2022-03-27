@@ -25,7 +25,7 @@ const getAllUsersByItemId=async(req,res)=>{
     }
 }
 //שליפת זוכה על פי קוד זכיה
-const getWinnerByWinnigCode=async(req,res,id)=>{
+const getWinnerByWinnigCode=async(req,res)=>{
     let code=req.params.id;
     try{
         let win=await Winning.findById(code);
@@ -36,7 +36,7 @@ const getWinnerByWinnigCode=async(req,res,id)=>{
     }
 }
 //שליפת זוכה על פי קוד מוצר
-const getWinnerByItemId=async(req,res,id)=>{
+const getWinnerByItemId=async(req,res)=>{
     let code=req.params.id;
     try{
         let winner=await Winning.find({item_id:code});

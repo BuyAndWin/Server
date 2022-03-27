@@ -6,7 +6,6 @@ const winningRout = require("./routes/winning");
 const app = express();
 
 
-
 mongoose.connect("mongodb://localhost:27017").then(() => {
     console.log("connted to moingo db")
 })
