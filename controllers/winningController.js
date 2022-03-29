@@ -1,5 +1,5 @@
 const winnig=require('../models/winningModel');
-const Item=require('../models/item').Item;
+const Item=require('../models/itemsModel').Item;
 
 //הוספת זכיה
 const addWinning=async(req,res)=>{
