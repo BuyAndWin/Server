@@ -6,8 +6,8 @@ const winningRout = require("./routes/winning");
 const app = express();
 
 
-mongoose.connect("mongodb://localhost:27017").then(() => {
-    console.log("connted to moingo db")
+mongoose.connect("mongodb://localhost:27017/myDB").then(() => {
+    console.log("connted to mongo db")
 })
     .catch(err => console.log(err));
 
